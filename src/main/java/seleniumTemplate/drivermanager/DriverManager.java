@@ -17,6 +17,8 @@ public class DriverManager {
     private String headlessMode;
 
     private WebDriver driver;
+    static Logger logger = Logger.getLogger(DriverManager.class.getName());
+
 
     public DriverManager() {
     }
@@ -76,7 +78,7 @@ public class DriverManager {
 
                     driver = new RemoteWebDriver(chromeDriverService.getUrl(), capabilities);
                     driver.manage().deleteAllCookies();
-                    //log.info(browser.toUpperCase() + " browser: is started");
+                    logger.info(browser.toUpperCase() + " browser: is started");
                     break;
                 } catch (IOException e) {
                     e.getMessage();
