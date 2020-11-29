@@ -26,12 +26,7 @@ public class DriverManager {
         this.headlessMode = headlessMode;
     }
 
-    /**
-     * Based on the generateGrid flag it invokes the
-     * selenium grid driver instance or it invokes the standalone driver instance.
-     *
-     * @return the driver instance
-     */
+    
     public WebDriver getDriver() {
         this.driver = createDriver();
         return driver;
