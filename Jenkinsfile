@@ -8,6 +8,13 @@ pipeline {
                 echo " value is: ${env.Var}"
                 echo " Val here is: ${Var}"
 
+                echo " Global is: ${env.ATUL_ENV}"
+                echo " Global here is: ${ATUL_ENV}"
+
+
+
+
+
             }
        }
     }
